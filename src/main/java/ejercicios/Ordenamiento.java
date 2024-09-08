@@ -10,8 +10,19 @@ import java.util.Scanner;
  */
 public class Ordenamiento {
     public static String evaluar(int numero1, int numero2, int numero3, int numero4) {
-        // TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-        return "";
+        int[] numeros = {numero1, numero2, numero3, numero4};
+        
+        java.util.Arrays.sort(numeros);
+        
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < numeros.length; i++) {
+            sb.append(numeros[i]);
+            if (i < numeros.length - 1) {
+                sb.append(" ");
+            }
+        }
+        
+        return sb.toString();
     }
     
     public static void main(String[] args) {
